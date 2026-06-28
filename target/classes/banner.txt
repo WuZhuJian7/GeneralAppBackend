@@ -1,0 +1,16 @@
+${AnsiColor.GREEN}
+ ██╗    ██╗██╗   ██╗███████╗██╗  ██╗██╗   ██╗     ██╗██╗ █████╗ ███╗   ██╗
+ ██║    ██║██║   ██║╚══███╔╝██║  ██║██║   ██║     ██║██║██╔══██╗████╗  ██║
+ ██║ █╗ ██║██║   ██║  ███╔╝ ███████║██║   ██║     ██║██║███████║██╔██╗ ██║
+ ██║███╗██║██║   ██║ ███╔╝  ██╔══██║██║   ██║██   ██║██║██╔══██║██║╚██╗██║
+ ╚███╔███╔╝╚██████╔╝███████╗██║  ██║╚██████╔╝╚█████╔╝██║██║  ██║██║ ╚████║
+  ╚══╝╚══╝  ╚═════╝ ╚══════╝╚═╝  ╚═╝ ╚═════╝  ╚════╝ ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝
+${AnsiColor.DEFAULT}
+  Application Name  : ${spring.application.name}
+  Spring Boot       : ${spring-boot.version}
+  Port              : ${server.port}
+  Context Path      : ${server.servlet.context-path}
+  Profile           : ${spring.profiles.active}
+${AnsiColor.BRIGHT_BLUE}
+  GitHub            : https://github.com/wuzhujian7
+${AnsiColor.DEFAULT}

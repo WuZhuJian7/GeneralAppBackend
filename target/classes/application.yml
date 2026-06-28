@@ -1,0 +1,52 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /backend
+
+spring:
+  profiles:
+    active: dev
+  application:
+    name: general-app-backend
+  banner:
+    charset: UTF-8
+    location: classpath:banner.txt
+
+  # Jackson
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: Asia/Shanghai
+    default-property-inclusion: non_null
+
+# MyBatis-Plus
+mybatis-plus:
+  mapper-locations: classpath*:/mapper/**/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      id-type: auto
+      logic-delete-field: deleted
+      logic-delete-value: 1
+      logic-not-delete-value: 0
+
+# Springdoc
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+    tags-sorter: alpha
+    operations-sorter: alpha
+  api-docs:
+    path: /v3/api-docs
+  group-configs:
+    - group: default
+      paths-to-match: /**
+      packages-to-scan: com.general.app.module
+
+# Logging
+logging:
+  level:
+    root: INFO
+    com.general.app: DEBUG
+    org.springframework.security: DEBUG
