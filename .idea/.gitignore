@@ -8,3 +8,9 @@
 # Datasource local storage ignored files
 /dataSources/
 /dataSources.local.xml
+
+# 编译后文件
+/target/
+
+# idea个人配置文件
+.idea
